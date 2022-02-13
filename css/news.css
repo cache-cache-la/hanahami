@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+img {
+    margin-bottom: 16px;
+    border-radius: 12px;
+}
+
+.newsCategory {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background-color: #79c06e;
+    color: #fffff9;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 0.8rem;
+}
+.newsCategory.workshop {
+    background-color: #7b5554;
+}
+.newsCategory.important {
+    background-color: darkred;
+}
+
+.newsTime {
+    padding: 4px 0;
+    vertical-align: bottom;
+    letter-spacing: 2px;
+}
+
+/*----- latest news -----*/
+#newsLatest {
+    margin: 0 auto 20px;
+    padding: 10px;
+    width: 80%;
+    height: 480px;
+    background-image: url(../images/point_back.jpg);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+#newsLatest ul {
+    display: flex;
+    justify-content: center;
+}
+
+#newsLatest ul li {
+    padding: 20px;
+    width: 50%;
+}
+
+#newsLatestData {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+#newsLatestTitle {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+/*----- news list -----*/
+#newsList {
+    margin: 0 auto;
+    width: 80%;
+}
+#newsList ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.newsCard {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 45%;
+    height: 480px;
+    background-image: url(../images/point_back.jpg);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.newsImg {
+    display: block;
+    margin: 0 auto;
+}
+
+.newsImg, .newsData, .newsTitle {
+    margin-bottom: 16px;
+}
+
+.newsData {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+/*----- media query -----*/
+@media screen and (max-width: 768px){
+    #newsLatestTitle, .newsTitle {
+        font-size: 1.0rem;
+        line-height: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    #newsLatest ul,
+    #newsList ul {
+        flex-direction: column;
+    }
+    
+    #newsLatest ul li,
+    #newsList ul li {
+        width: 99%;
+    }
+}

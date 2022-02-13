@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+#accessArea {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#gMap {
+    padding-bottom: 56.25%;
+    margin: 0 auto;
+    width: 48%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+#gMap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#accessDetail {
+    padding: 20px;
+    width: 48%;
+    letter-spacing: 1px;
+}
+
+#accessDetail p {
+    margin-bottom: 20px;
+}
+
+#accessImg img {
+    border-radius: 12px;
+}
+
+.accessBorder {
+    padding-bottom: 20px;
+    background-image : linear-gradient(to right, #333, #333 2px, transparent 2px, transparent 8px);
+    background-size: 8px 2px;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+}
+
+.fas {
+    font-size: 2.0rem;
+    margin-right: 1.0rem;
+}
+
+.fa-parking {
+    margin-left: 4px;
+}
+
+.accessTitle {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+.accessText {
+    display: block;
+    margin: 10px 0 0 3.0rem;
+    font-size: 0.9rem;
+}
+
+/*----- media query -----*/
+@media screen and (max-width: 768px){
+    #accessArea {
+        flex-direction: column;
+    }
+    #gMap {
+        margin-bottom: 16px;
+        width: 80%;
+    }
+    #accessDetail {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    #gMap {
+        width: 99%;
+    }
+    #accessDetail {
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 99%;
+    }
+}
